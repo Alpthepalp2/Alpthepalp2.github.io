@@ -2,8 +2,10 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
+  <link rel="stylesheet" href="{{ '/assets/css/animations.css' | relative_url }}">
 
   <body>
+    <canvas id="bg-canvas"></canvas>
 
     {%- include header.html -%}
 
@@ -15,6 +17,7 @@
 
     {%- include footer.html -%}
 
+    <script src="{{ '/assets/js/animations.js' | relative_url }}"></script>
   </body>
 
 </html>
